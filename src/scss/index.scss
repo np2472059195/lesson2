@@ -1,0 +1,78 @@
+@import './common.scss';
+@import './iconfont.scss';
+@import './reset.scss';
+html,
+body {
+    @extend %full;
+}
+
+.box {
+    @extend %full;
+    display: flex;
+    flex-direction: column;
+    background: #F0F0F0;
+    .header {
+        height: px2rem(50px);
+        width: 100%;
+        background: red;
+        display: flex;
+        line-height: px2rem(50px);
+        i {
+            font-size: px2rem(20px);
+            margin: 0 px2rem(15px);
+        }
+        span {
+            flex: 1;
+            text-align: center;
+            font-size: px2rem(20px);
+        }
+    }
+    .container {
+        flex: 1;
+        .btns {
+            display: flex;
+            height: px2rem(80px);
+            width: 100%;
+            a {
+                width: 25%;
+                height: px2rem(80px);
+                text-align: center;
+                margin-top: px2rem(20px);
+                color: #333;
+                img {
+                    width: px2rem(40px);
+                    height: px2rem(40px);
+                }
+                span {
+                    display: block;
+                }
+            }
+        }
+        .cons {
+            height: 91%;
+            width: 100%;
+            overflow: hidden;
+            .con {
+                height: 100%;
+                width: 100%;
+                text-align: center;
+                font-size: px2rem(50px);
+            }
+        }
+        .show {
+            display: block;
+        }
+        .hide {
+            display: none;
+        }
+    }
+    .footer {
+        height: px2rem(50px);
+        width: 100%;
+        background: red;
+        i {
+            font-size: px2rem(20px);
+            margin: 0 px2rem(15px);
+        }
+    }
+}
